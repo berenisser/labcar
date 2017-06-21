@@ -13,13 +13,13 @@ Color gris (footer): #2b2b2b
 	border-color:#fff;
 	background-image:none;
 	box-shadow:none;
-	padding: 2% 5%;
+	padding: 1.5% 5%;
 }
 
 /*para cambiar el color del hover del scroll spy*/
-.navbar-inverse .navbar-nav>.active>a, 
-.navbar-inverse .navbar-nav>.active>a:focus, 
-.navbar-inverse .navbar-nav>.active>a:hover{
+.navbar-amarillo .navbar-nav>.active>a, 
+.navbar-amarillo .navbar-nav>.active>a:focus, 
+.navbar-amarillo .navbar-nav>.active>a:hover{
 	background: #fed136;
 	color: black;
 	border-radius: 3px;
@@ -73,9 +73,27 @@ Color gris (footer): #2b2b2b
 	background: cover;
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .gris{
 	background-color: rgba(43,43,43,0.5);
 	height: 500px;
 }
+
+/*tarifa*/
+
+#tarifa{
+	background-color: #f7b617;
+	padding: 4% 0;
+}
+
+.cuadro-mapa{
+	height: 450px;
+	width: 500px;
+	margin: 1%;
+	border: 1px solid #fff;
+}
+
+
+

@@ -11,7 +11,7 @@
 </head>
 <body data-spy="scroll">
 	<section class="first-section">
-		<nav class="navbar navbar-default navbar-fixed-top" id="header">
+		<nav class="navbar navbar-default navbar-amarillo navbar-fixed-top" id="header">
 			<div class="container-fluid">
 				<div class="navpart-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -96,15 +96,57 @@
 	<section class="container-fluid" id="conduce">
 		<div class="row">
 			<div class="col-lg-4 col-lg-offset-8 col-md-4 col-md-offset-8 col-sm-12 col-xs-12 gris">
-				
+				<h2>Conduce cuando quieras</h2>
+				<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+				<div>
+					<button class="btn btn-default">Conviértete en un conductor</button>
+				</div>
 			</div>
 		</div>
 	</section>
 
+<!-- tarifa -->
+
+	<section id="tarifa">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<h2>Tarifas</h2>
+					<p>Colsuta las tarifas LabCar aquí</p>
+					<div>
+						<input id="origen" type="text" placeholder="Tu Origen">
+					</div>
+					<div>
+						<input id="destino" type="text" placeholder="Tu Destino">
+					</div>
+					<div>
+						<button class="btn btn-default" id="ruta">TRAZAR RUTA</button>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="map-margen">
+						<div class="cuadro-mapa" id="map">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>	
+	</section>
+
+	<!-- AIzaSyA6lOSv0rWAmZbr8tditeWDVXU4wZAejpk -->
 
 	<script src="https://use.fontawesome.com/8f8db047c3.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1VnDT5wAx6ih5dVv0xdNHzhfTHM4TRM8&callback=initMap&libraries=places"
+
+<!-- 
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6lOSv0rWAmZbr8tditeWDVXU4wZAejpkAIzaSyA6lOSv0rWAmZbr8tditeWDVXU4wZAejpk&callback=initMap&libraries=places" type="text/javascript"></script>
+ -->
+	
+
+	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6lOSv0rWAmZbr8tditeWDVXU4wZAejpk&callback=initMap&libraries=places"
   type="text/javascript"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="assets/js/main.js"></script>
