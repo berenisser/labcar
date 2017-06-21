@@ -35,7 +35,7 @@ function initMap(){
 		alert("Tenemos problemas encontrando tu ubicación");
 	}  
 
-	buscar();
+	//buscar();
 
 //autocompletado
 	var origen = document.getElementById("origen");
