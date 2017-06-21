@@ -1,0 +1,9 @@
+@media (min-width: 1px) and (max-width:768px){
+	#conduce{
+		height: 250px;
+	}
+
+	.gris{
+		height: 250px;
+	}
+}
