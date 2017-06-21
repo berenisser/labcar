@@ -1,34 +1,62 @@
 /*
-Color-lab: #f7b617
+Color-amarillo: #f7b617
 Color gris (footer): #2b2b2b 
 */
 
+*{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*Navbar...................*/
+.navbar-default {
+	background-color:#fff;
+	border-color:#fff;
+	background-image:none;
+	box-shadow:none;
+	padding: 2% 5%;
+}
+
+/*para cambiar el color del hover del scroll spy*/
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover{
+	background: #fed136;
+	color: black;
+	border-radius: 3px;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.navbar-toggle{
+	background-color: #fed136;
+} 
+
+
+.navbar-color{
+	background-color: #001510;
+}
+
+/*first section............*/
 .first-section{
-	background-color: #34495E;
+	background: url(../img/taxi.jpg) 50% 50% / 100% no-repeat fixed;
+	height: 100vh;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
-	border-bottom: 3px solid gray;
 }
 
-.navpart-header,
-.navbar-nav { 
-   margin: 0 5%
- }
-
-li:hover{
-	background-color: lightgray;
+.caja-amarilla{
+	margin-top: 200px;
+	background-color: #f7b617;
+	padding: 3%;
 }
 
-#intro{
-	color: #fff;
+.mt-0{
+	margin-top: 0;
 }
 
-#intro h1{
-	font-size: 57px;
-	padding-top: 5%;
-}
+/*information*/
 
-#intro h3{
-	padding-bottom: 3%;
+#information{
+	background-color: #f7b617;
+	padding: 2% 0;
 }
