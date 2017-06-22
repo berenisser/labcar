@@ -35,7 +35,7 @@ function initMap(){
 		alert("Tenemos problemas encontrando tu ubicación");
 	}  
 
-	//buscar();
+	buscar();
 
 //autocompletado
 	var origen = document.getElementById("origen");
@@ -68,6 +68,7 @@ REFERENCIA: https://developers.google.com/maps/documentation/javascript/examples
        document.getElementById('origen').addEventListener('change', onChangeHandler);
        document.getElementById('destino').addEventListener('change', onChangeHandler);*/
 
+    /*https://christianvarga.com/how-to-calculate-driving-distance-between-2-locations-with-google-maps-api/*/
 
 	function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 		directionsService.route({
