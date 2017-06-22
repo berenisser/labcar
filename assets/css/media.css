@@ -19,4 +19,12 @@
 		margin-left: 8.3%;
 		margin-top: 10px;
 	}
+
+	#tarifa{
+		padding-bottom: 40px;
+	}
+
+	.pie{
+		padding-top: 40px;
+	}
 }

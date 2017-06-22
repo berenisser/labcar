@@ -49,10 +49,35 @@ body {
 	background-position: center bottom;
 }
 
+#welcome h2,
+#welcome h3,
+#welcome h5{
+	color: #fff;
+}
+
 .caja-amarilla{
-	margin-top: 200px;
+	margin-top: 150px;
 	background-color: #f7b617;
 	padding: 3%;
+}
+
+.rayita{
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	margin: 5px 0;
+	color: #fff;
+	background-color: transparent;
+	outline: none;
+}
+
+.amarillo-mobile{
+	padding: 20px;
+}
+
+.spancito{
+	color: #fff;
+	padding: 0 30px;
 }
 
 .mt-0{
@@ -68,6 +93,12 @@ body {
 
 #informacion img{
 	padding: 20px 0;
+}
+
+#informacion h2,
+#informacion p{
+	color: #fff;
+	margin-top: 30px;
 }
 
 .caja-linea{
