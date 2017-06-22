@@ -1,7 +1,7 @@
 function initMap(){
 	var map = new google.maps.Map(document.getElementById("map"),{
 		zoom: 5,
-		center: {lat: -9.1191427, lng: -77.0349046},
+		center: {lat: -33.4724712, lng: -70.9107133},
 		mapTypeControl: false,
 		zoomControl: false,
 		streetViewControl: false
@@ -56,11 +56,12 @@ REFERENCIA: https://developers.google.com/maps/documentation/javascript/examples
 
 	directionsDisplay.setMap(map);
 
-        var onChangeHandler = function() {
-         calculateAndDisplayRoute(directionsService, directionsDisplay);
-        };
+    var onChangeHandler = function() {
+     calculateAndDisplayRoute(directionsService, directionsDisplay);
+     calcularCostoRuta();
+    };
 
-     document.getElementById("ruta").addEventListener("click",onChangeHandler);
+    document.getElementById("ruta").addEventListener("click",onChangeHandler);
         
        /* 
 		estos hacen que despues de cambiar las direcciones se envie la info
@@ -77,9 +78,36 @@ REFERENCIA: https://developers.google.com/maps/documentation/javascript/examples
 			if (status === 'OK') {
 				directionsDisplay.setDirections(response);
 			} else {
-				window.alert('Directions request failed due to ' + status);
+				window.alert('Fallo debido a ' + status);
+			}
+		});
+	}
+
+/*funcion de calculo de costo dependiendo de la distancia*/
+
+	function calcularCostoRuta() {
+	var comienzo = document.getElementById("origen").value;
+	var fin = document.getElementById("destino").value;
+	var cajaCosto = document.getElementById("costo-viaje");
+	
+	var request = {
+		origin:comienzo, 
+		destination:fin,
+		travelMode: google.maps.DirectionsTravelMode.DRIVING
+	};
+	
+		directionsService.route(request, function(response, status) {
+			if (status == google.maps.DirectionsStatus.OK) {
+				directionsDisplay.setDirections(response);
+				var costo = Math.round((response.routes[0].legs[0].distance.value / 1000)*800);
+				var h_3 = document.createElement("h3");
+				var h3Texto = document.createTextNode("CLP $" + costo);
+				h_3.appendChild(h3Texto);
+				cajaCosto.appendChild(h_3);
 			}
 		});
 	}
 
 }
+
+

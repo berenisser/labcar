@@ -66,6 +66,10 @@ body {
 	padding: 4% 0;
 }
 
+#informacion img{
+	padding: 20px 0;
+}
+
 .caja-linea{
 	border: 1px solid #fff;
 }
@@ -81,9 +85,21 @@ body {
 	background-position: center;
 }
 
+.amarillo{
+	background-color: #f7b617;
+	border: none;
+	color: #fff;
+}
+
+.fsize-18{
+	font-size: 18px;
+}
+
 .gris{
 	background-color: rgba(43,43,43,0.5);
 	height: 500px;
+	padding-top: 90px;
+	padding-left: 20px;
 }
 
 /*tarifa*/
@@ -93,10 +109,21 @@ body {
 	padding: 4% 0;
 }
 
+#tarifa h2,
+#tarifa p,
+#conduce h2,
+#conduce p{
+	color: #fff;
+}
+
 .cuadro-mapa{
 	height: 450px;
-	width: 500px;
-	margin: 1%;
+	width: 541px;
+	margin:0;
+}
+
+.map-margen{
+	padding:1%;
 	border: 1px solid #fff;
 }
 
@@ -109,7 +136,7 @@ body {
 	color: #fff;
 	outline: none;
 	padding-left: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 #tarifa img{
@@ -138,6 +165,17 @@ hr{
 	color: #f7b617;
 }
 
+.lineas i{
+	color: #fff;
+	cursor: pointer;
+	margin-right: 8px;
+}
+
+
+.mt-50{
+	margin-top: 50px;
+}
+
 .mt-25{
 	margin-top: 25px;
 }
@@ -146,8 +184,16 @@ hr{
 	margin-top: 5px;
 }
 
+.redes-sociales{
+	padding-top: 350px;
+}
+
 .tiendas{
 	padding-top: 230px;
+}
+
+.tiendas img{
+	cursor: pointer;
 }
 
 .pie p{

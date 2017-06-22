@@ -68,26 +68,28 @@
 
 	<section class="container-fluid" id="informacion">
 		<div class="row">
-			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 caja-linea">
+			<div class="col-lg-10 col-md-10 col-sm-10  col-xs-10  caja-linea">
 				<div class="row">
+					<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"></div>
 					<div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center">
-						<p>La nueva App</p>
+						<p class="fsize-18">La nueva App</p>
 					</div>
-					<div class="col-lg-6 col-md-6">
-						<img src="assets/img/celular.png" alt="">
+					<div class="col-lg-5 col-md-5">
+						<img class="img-responsive" src="assets/img/celular.png" alt="">
 					</div>
-					<div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+					<div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
 						<h2>Descarga la Nueva App</h2>
-						<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido. <br><br>
+						<p class="fsize-18">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido. <br><br>
 
 						Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir
 						</p>
 					</div>
+					<div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
 				</div>
 			</div>
 		</div>
 		<div class="hidden-lg hidden-md col-sm-12 col-xs-12 text-center">
-			<p>Llega a tu destino aún más rapido</p>
+			<p class="fsize-18">Llega a tu destino aún más rapido</p>
 		</div>
 	</section>
 
@@ -96,10 +98,10 @@
 	<section class="container-fluid" id="conduce">
 		<div class="row">
 			<div class="col-lg-4 col-lg-offset-8 col-md-4 col-md-offset-8 col-sm-12 col-xs-12 gris">
-				<h2>Conduce cuando quieras</h2>
-				<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-				<div>
-					<button class="btn btn-default">Conviértete en un conductor</button>
+				<h2 class="mt-25"><strong>Conduce cuando quieras</strong></h2>
+				<p class="mt-25 fsize-18">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+				<div class="mt-25">
+					<button class="btn btn-lg amarillo btn-default">Conviértete en un conductor</button>
 				</div>
 			</div>
 		</div>
@@ -111,9 +113,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<h2>Tarifas</h2>
-					<p>Colsuta las tarifas LabCar aquí</p>
-					<div class="row">
+					<h2 class="mt-50"><strong>Tarifas</strong></h2>
+					<p class="fsize-18">Colsuta las tarifas LabCar aquí</p>
+					<div class="row mt-25">
 						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
 							<img src="assets/img/circulo.png" alt="">
 						</div>
@@ -128,12 +130,12 @@
 						<div class="col-lg-10 col-md-10 col-sm-11 col-xs-11">
 							<input id="destino" type="text" placeholder="Tu Destino">
 						</div>
-
-
-						
 					</div>
 					<div class="text-center">
-						<button class="btn btn-default" id="ruta">TRAZAR RUTA</button>
+						<button class="btn btn-lg btn-default" id="ruta"><strong>¡TRAZAR RUTA!</strong></button>
+					</div>
+					<div class="text-center">
+						<div id="costo-viaje"></div>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
@@ -147,6 +149,8 @@
 		</div>	
 	</section>
 
+	<!-- footer -->
+
 	<section class="pie">
 		<div class="container">
 			<div class="row">
@@ -156,8 +160,14 @@
 			</div>
 			<hr>
 			<div class="row lineas">
-				<div class="col-lg-3 col-md3">
-					
+				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+					<div class="redes-sociales">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<i class="fa fa-apple" aria-hidden="true"></i>
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 					<div class="mt-5">
@@ -187,37 +197,47 @@
 				</div>
 				<div class="col-lg-3 col-md3 hidden-sm hidden-xs">
 					<div class="mt-5">
-						<a href="#">Viaja</a>
+						<a href="#">Oportunidades</a>
 					</div>
 					<div class="mt-25">
-						<a href="#">Conduce</a>
+						<a href="#">Nuestra historia</a>
 					</div>
 					<div class="mt-25">
-						<a href="#">Ciudades</a>
+						<a href="#">API de LabCar</a>
 					</div>
 					<div class="mt-25">
-						<a href="#">Ciudades</a>
+						<a href="#">Eventos</a>
 					</div>
 					<div class="mt-25">
-						<a href="#">Entregas</a>
+						<a href="#">Desarrolladores</a>
 					</div>
 					<div class="mt-25">
-						<a href="#">Cómo funciona?</a>
+						<a href="#">Servicios</a>
 					</div>
 					<div class="mt-25">
-						<a href="#">Países</a>
+						<a href="#">Laboratoria</a>
 					</div>
 					<div class="mt-25">
-						<a href="#">Seguridad</a>
+						<a href="#">Coders</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md3 text-center tiendas">
-					<div>
-						<img src="assets/img/app-store.png" alt="">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 text-center ">
+					<div class="hidden-lg hidden-md">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<i class="fa fa-apple" aria-hidden="true"></i>
+						<i class="fa fa-play" aria-hidden="true"></i>
 					</div>
-					<div>
-						<img src="assets/img/google-play.png" alt="">
-					</div>
+
+					<div class="tiendas">
+						<div>
+							<img class="img-responsive" src="assets/img/app-store.png" alt="">
+						</div>
+						<div>
+							<img class="img-responsive mt-5" src="assets/img/google-play.png" alt="">
+						</div>
+					</div>	
 				</div>
 			</div>
 			<hr>
